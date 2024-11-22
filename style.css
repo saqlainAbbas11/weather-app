@@ -1,0 +1,82 @@
+body {
+    color: #fff;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #CFD8DC;
+    background-repeat: no-repeat;
+}
+
+
+.card {
+    background-image: url("https://i.imgur.com/dpqZJV5.jpg");
+    background-size: cover;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 4px #9E9E9E;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.time-font {
+    font-size: 50px;
+}
+
+.sm-font {
+    font-size: 18px;
+}
+
+.med-font {
+    font-size: 28px;
+}
+
+.large-font {
+    font-size: 60px;
+}
+/* Container for the search bar */
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Set a max-width to ensure it doesn't stretch too wide on large screens */
+    margin: 0 auto;
+}
+
+/* Style for the search input field */
+.search-bar {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #ddd; /* Light grey border */
+    border-radius: 30px; /* Rounded corners */
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9; /* Light background */
+}
+
+/* Focus effect for the search input */
+.search-bar:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle blue shadow */
+    background-color: #ffffff; /* White background on focus */
+}
+
+/* Adding a placeholder color */
+.search-bar::placeholder {
+    color: #888; /* Light grey color for the placeholder */
+}
+
+/* Responsive design: adjust width for smaller screens */
+@media (max-width: 768px) {
+    .search-bar {
+        width: 90%; /* Make it smaller on smaller screens */
+        padding: 10px 15px;
+    }
+}
+
+/* Optional: Adding a subtle hover effect for the input */
+.search-bar:hover {
+    border-color: #007bff; /* Blue border on hover */
+    background-color: #ffffff; /* White background on hover */
+}
